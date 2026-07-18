@@ -1,0 +1,58 @@
+body {
+    background: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1 {
+    color: red;
+}
+
+.warning {
+    color: #bbb;
+}
+
+/* Loading Bar */
+
+#loading-container {
+    width: 600px;
+    max-width: 90%;
+    height: 35px;
+
+    margin: 40px auto;
+
+    background: #222;
+
+    border: 3px solid white;
+    border-radius: 20px;
+
+    overflow: hidden;
+}
+
+#loading-bar {
+    width: 0%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #00ff55,
+        #9dff00
+    );
+
+    transition: width .4s ease;
+}
+
+#loading-text {
+    font-size: 32px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+}
+
+#status-text {
+    color: #00ff99;
+    font-family: Consolas, monospace;
+    font-size: 20px;
+    min-height: 28px;
+}

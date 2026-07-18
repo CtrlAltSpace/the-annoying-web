@@ -1,0 +1,11 @@
+#nuke-button {
+    background: red;
+    cursor: pointer;
+    transition: 1s ease;
+}
+#nuke-button:hover {
+    background: yellow;
+    transform: rotate(720deg) scale(2.5) translateY(-15px) translateX(115.5px);
+    opacity: 1;
+    box-shadow: 0 0 25px 25px rgba(0, 0, 0, 1);
+}
