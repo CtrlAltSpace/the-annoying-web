@@ -18,6 +18,6 @@ button.addEventListener("click", function () {
         button.textContent = messages[clickCount];
         clickCount++;
     } else {
-        window.open("actually_nothing.html");
+        window.open("ending.html");
     }
 });
