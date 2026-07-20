@@ -85,7 +85,7 @@ function nextStep() {
         percent.textContent = "100%";
 
         setTimeout(() => {
-            window.location.href = "nothing.html";
+            window.location.href = "nuked.html";
         }, 2000);
 
         return;
