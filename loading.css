@@ -1,34 +1,35 @@
 body {
+    font-family: Arial, Helvetica, sans-serif;
     background: #111;
     color: white;
-    font-family: Arial, sans-serif;
     text-align: center;
     margin-top: 100px;
 }
 
 h1 {
     color: red;
+    text-shadow: 0 0 15px red;
+    animation: blink 1s infinite;
 }
 
 .warning {
-    color: #bbb;
+    margin-bottom: 40px;
+    color: #ccc;
 }
 
-/* Loading Bar */
-
 #loading-container {
-    width: 600px;
+    width: 650px;
     max-width: 90%;
     height: 35px;
 
-    margin: 40px auto;
-
-    background: #222;
+    margin: auto;
 
     border: 3px solid white;
-    border-radius: 20px;
+    border-radius: 30px;
 
     overflow: hidden;
+
+    background: #222;
 }
 
 #loading-bar {
@@ -37,22 +38,43 @@ h1 {
 
     background: linear-gradient(
         90deg,
-        #00ff55,
-        #9dff00
+        #ff0000,
+        #ff5c00,
+        #ffd000
     );
 
-    transition: width .4s ease;
+    transition: width 0.2s linear;
 }
 
 #loading-text {
-    font-size: 32px;
+    font-size: 30px;
     font-weight: bold;
-    margin: 20px 0 10px;
+    margin-top: 25px;
 }
 
 #status-text {
-    color: #00ff99;
+    margin-top: 25px;
+
+    color: #00ff88;
+
     font-family: Consolas, monospace;
-    font-size: 20px;
-    min-height: 28px;
+    font-size: 22px;
+
+    min-height: 30px;
+}
+
+@keyframes blink {
+
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .4;
+    }
+
+    100% {
+        opacity: 1;
+    }
+
 }
