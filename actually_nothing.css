@@ -14,5 +14,17 @@ html, body {
 
 #screen {
     margin: 0;
-    white-space: pre;
+    z-index: 0;
+}
+
+p {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+    color: white; /* or black depending on your blocks */
+    text-align: center;
+    white-space: nowrap;
 }
