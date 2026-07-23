@@ -22,3 +22,12 @@ function draw() {
 draw();
 
 window.addEventListener("resize", draw);
+
+setTimeout(() => {
+    document.getElementById("fade").classList.add("active");
+
+    setTimeout(() => {
+        window.location.href = "the_end.html";
+    }, 3000);
+
+}, 3000);

@@ -28,3 +28,17 @@ p {
     text-align: center;
     white-space: nowrap;
 }
+
+#fade {
+    position: fixed;
+    inset: 0;
+    background: black;
+    opacity: 0;
+    pointer-events: none;
+    z-index: 9999;
+    transition: opacity 3s cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+#fade.active {
+    opacity: 1;
+}
